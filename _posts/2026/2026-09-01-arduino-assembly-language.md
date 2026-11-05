@@ -24,7 +24,7 @@ It’s designed to be both educational and practical, helping developers and mak
 
 ### Example Sketch
 
-The code below is created as a library, in the book, to allow easy access to the Watchdog Timer, and it's ability to reset the board when it hangs up, as well as triggering an interrupt at regular intervals. For the sake of this example, just add the files as detailed, to the sketch.
+The code below is created as a library, in the book, to allow easy access to the Watchdog Timer, and its ability to reset the board when it hangs up, as well as triggering an interrupt at regular intervals. For the sake of this example, just add the files to the skect and don't worry about the original library.
 
 #### The `setup()` Function
 
@@ -64,7 +64,7 @@ ISR(WDT_vect) {
 
 
 
-#### The Watchdog Library Header
+#### The Header File
 
 In the Arduino IDE, click the button with three dots on it (...) and select "New Tab". Give the tab the name `wdt_test.h` and paste the code below into that tab.
 
@@ -111,7 +111,7 @@ In the Arduino IDE, click the button with three dots on it (...) and select "New
 #endif // WDT_H
 ```
 
-#### The Watchdog Library Code
+#### The Watchdog Code
 
 In the Arduino IDE, click the "..." button again and select "New Tab". Give the tab the name `wdt_test.S` (The extension of the filename *must* be an uppercase `S`, not a lowercase one. Paste the code below into that tab.
 
